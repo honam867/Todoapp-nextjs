@@ -8,8 +8,7 @@
     "start": "next start",
     "start:static": "serve",
     "lint": "eslint components",
-    "export": "npm run build:server && npm run export:server",
-    "now-build": "next build"
+    "export": "npm run build:server && npm run export:server"
   },
   "eslintConfig": {
     "extends": "react-app"
