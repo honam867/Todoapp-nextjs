@@ -4,7 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
-import TodoItem from "./TodoItem";
+import TodoItem from "./TodDoItem";
 const useStyle = makeStyles((theme) => ({
   todo: {
     maxWidth: 400,
