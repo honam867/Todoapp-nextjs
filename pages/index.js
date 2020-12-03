@@ -11,13 +11,13 @@ export default function Home() {
   );
 }
 
-export async function getServerSideProps() {
-  const res = await fetch("https://github.com/jackipro/RaoVatMienPhi.git");
-  const json = await res.json();
+// export async function getServerSideProps() {
+//   const res = await fetch("https://github.com/jackipro/RaoVatMienPhi.git");
+//   const json = await res.json();
 
-  return {
-    props: {
-      stars: json.stargazers_count,
-    },
-  };
-}
+//   return {
+//     props: {
+//       stars: json.stargazers_count,
+//     },
+//   };
+// }

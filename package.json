@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next",
     "start": "next start",
-    "start:static": "serve",
     "lint": "eslint components",
-    "export": "npm run build:server && npm run export:server"
+    "build": "next build",
+    "build:server": "NEXT_TARGET=server next build",
+    "export:server": "NEXT_TARGET=server next export",
+    "export": "npm run build:server && npm run export:server",
+    "start:static": "serve",
+    "now-build": "next build"
   },
   "eslintConfig": {
     "extends": "react-app"
