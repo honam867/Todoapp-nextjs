@@ -1,7 +1,7 @@
 import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheets } from "@material-ui/styles";
-
+export const siteTitle = "Using Next JS to SEO";
 class MyDocument extends Document {
   render() {
     return (
@@ -11,6 +11,16 @@ class MyDocument extends Document {
           <meta
             name="Description"
             content="Demo To Do app using Next JS with Material UI made by Thanh Name clone from Simple Next JS boilerplate"
+          />
+          <meta
+            property="og:image"
+            content={`https://og-image.now.sh/${encodeURI(
+              siteTitle
+            )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          />
+          <meta
+            name="og:title"
+            content="This app demo using next js to SEO by Thanh Nam"
           />
           <link rel="manifest" href="static/manifest.json" />
           <link rel="icon" href="static/img/favicon.ico" />
